@@ -19,21 +19,60 @@ body {
 }
 
 /* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85); /* Transparansi agar wavy terlihat */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  backdrop-filter: blur(100px); /* Efek blur kaca */
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 
-.navbar {
-    background-image: url('../img/Background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    backdrop-filter: blur(5px); /* Optional: bisa dihilangkan agar tidak kabur */
-    background-color: transparent; /* Jangan pakai semi-transparan */
+/* Warna semi-transparan putih + efek blur kaca */
+  background-color: rgba(255, 255, 255, 0.4); /* Lebih transparan agar blur jelas */
+  backdrop-filter: blur(20px); /* Blur lebih kuat */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+  
+  
+  /* Tambahkan garis bawah */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+  /* Tambahkan bayangan bawah tipis */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav-menu a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+
+/* Logo kiri */
+.logo img {
+  height: 40px;
+}
+
+/* Menu tengah */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Gambar profil kanan */
+.profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* HERO */

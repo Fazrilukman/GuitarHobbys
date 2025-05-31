@@ -98,6 +98,38 @@ body {
   border-top: 1px solid #eee;
 }
 
+/* show more */
+.show-more {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px 12px 8px 16px;
+  border-radius: 999px;
+  background-color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+  gap: 10px;
+  margin-bottom: 5%;
+  margin-top: 0%;
+}
+
+.show-more .icon-circle {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-more-wrapper {
+  display: flex;
+  justify-content: center; /* agar tombol ke tengah horizontal */
+  width: 100%;
+}
+
 /* FOOTER */
 .footer {
     background-color: #000;
