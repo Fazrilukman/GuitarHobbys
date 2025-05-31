@@ -28,7 +28,7 @@ nav {
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   backdrop-filter: blur(100px); /* Efek blur kaca */
-  background-image: url('/img/background.jpg');
+  background-image: url('../img/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
