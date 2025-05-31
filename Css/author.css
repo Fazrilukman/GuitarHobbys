@@ -1,0 +1,360 @@
+/* ============================= */
+/* 1) RESET ALL                  */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================= */
+/* 2) GLOBAL STYLES              */
+/* ============================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #111;
+  line-height: 1.5;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+
+  top: 0;
+  z-index: 999;
+}
+
+/* Gambar profil kanan */
+.profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-menu a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: #ff6600;
+}
+
+/* ============================= */
+/* 4) AUTHOR SECTION              */
+/* ============================= */
+.author-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.author-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #222;
+}
+
+/* Grid 2×2:
+   - Baris 1: kolom 1 = Foto Author, kolom 2 = Guitar Collection
+   - Baris 2: kolom 1 = Bio Author,   kolom 2 = Accordion  */
+.author-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 40px;
+}
+
+/* --- Baris 1, Kolom 1: Foto Author --- */
+.author-photo-col {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.author-photo {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+
+/* ====================================================== */
+/* SECTION: Guitar Collection (Baris 1, Kolom 2)         */
+/* ====================================================== */
+
+/* Container untuk Guitar Collection */
+.guitar-collection-col {
+  grid-column: 2 / 3;      /* letakkan di grid kolom 2 */
+  grid-row: 1 / 2;         /* letakkan di grid baris 1 */
+}
+
+/* Judul kecil di atas kartu gitar */
+.section-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+/* Wrapper untuk semua kartu gitar (tampak berderet) */
+.collection-cards {
+  display: flex;
+  gap: 24px;             /* jarak antar kartu */
+  flex-wrap: wrap;       /* jika sempit, kartu wrap ke baris baru */
+  justify-content: flex-start;
+}
+
+/* Setiap kartu gitar: border, shadow, dan transparan di bagian atas */
+.collection-card {
+  position: relative;
+  width: 300px;                         /* lebar kartu */
+  background: transparent;              /* jangan hilangkan background pattern di atas */
+  border: 1px solid #e0e0e0;            /* border abu-abu terang */
+  border-radius: 8px;                   /* sudut membulat */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Bagian atas kartu: gambar gitar dengan BACKGROUND PATTERN */
+.card-image {
+  position: relative;
+  
+  /* 
+    Pastikan path-nya mengarah ke file pattern Anda.
+    Contoh di sini: img/wavy-pattern.png
+  */
+  background: url('../img/background1.jpg') no-repeat center top;
+  background-size: cover;
+
+  height: 180px;              /* tinggi area gambar supaya proporsional */
+  display: flex;
+  align-items: center;        /* center-kan secara vertikal */
+  justify-content: center;    /* center-kan secara horizontal */
+  padding: 12px;              /* beri ruang agar gitar tidak menempel pinggir */
+  box-sizing: border-box;
+}
+
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;  /* menjaga proporsi gitar */
+  display: block;
+}
+
+/* Bagian bawah kartu: nama & harga */
+.collection-info {
+  background: #ffffff;   /* background putih polos di area info */
+  border-top: 1px solid #dddddd;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collection-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 1.2;
+}
+
+.collection-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #d97300;    /* warna oranye tua */
+  white-space: nowrap;
+}
+
+
+/* --- Baris 2, Kolom 1: Bio Author --- */
+.author-bio-col {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.bio-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
+  display: inline-block;
+  border-bottom: 3px solid #000;  /* Garis tebal di bawah judul */
+  padding-bottom: 0;              /* Garis tepat di dasar huruf */
+}
+
+.author-bio {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 8px;             /* Jarak ke garis horizontal */
+}
+
+.bio-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0;                      /* Pas di bawah paragraf */
+}
+
+/* --- Baris 2, Kolom 2: Accordion “The reason I play guitar” --- */
+.author-reason-col {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.section-heading {
+  /* Selector ini sudah didefinisikan di atas, tapi kita ulangi
+     di sini agar ukuran font & margin konsisten untuk heading accordion */
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+/* Container accordion */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Setiap item accordion */
+.accordion-item {
+  background: #f4f4f4;          /* Abu-abu muda */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+/* Ikon di sebelah kiri tiap item */
+.accordion-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+/* Teks utama di tiap item */
+.accordion-text {
+  flex: 1;
+  font-size: 16px;
+  color: #444;
+  border-bottom: 1px solid #ccc;  /* Garis bawah tipis */
+  padding-bottom: 8px;
+}
+
+/* Panah di sebelah kanan */
+.accordion-arrow {
+  font-size: 20px;
+  color: #444;
+  margin-left: 12px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 60px;
+}
+
+.footer-line {
+    border: none;
+    border-top: 1px solid #555;
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 260px;
+}
+
+.brand-logo-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    width: 40px;
+}
+
+.footer-brand h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer-brand h2 span {
+    font-weight: 400;
+    color: #ccc;
+}
+
+.footer-socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.footer-socials a img:hover {
+    opacity: 1;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+    flex: 2;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+
+.link-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.link-column a {
+  display: block;
+  margin-bottom: 8px;
+  color: #888;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-column a:hover {
+  color: #fff;
+}

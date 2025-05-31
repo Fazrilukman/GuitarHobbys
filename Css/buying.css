@@ -1,0 +1,390 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  top: 0;
+  z-index: 999;
+}
+
+.profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: #ff6600;
+}
+
+/* Page Title */
+.title {
+  padding: 2rem 2rem 0;
+  font-size: 2rem;
+}
+
+.divider {
+  width: 76%;
+  margin: 0 auto 2rem;
+  border: 1px solid #000;
+}
+
+/* Guide Section */
+.guide-container {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.vertical-line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #999;
+}
+
+.guide-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.guide-image {
+  width: 370px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-right: 2rem;
+}
+
+.guide-text {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1.2rem;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.guide-text h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.guide-text p {
+  color: #555;
+  font-size: 14px;
+}
+
+.diamond {
+  width: 14px;
+  height: 14px;
+  background-color: #666;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -7px;
+  top: 50%;
+  margin-top: -7px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 60px;
+}
+
+.footer-line {
+    border: none;
+    border-top: 1px solid #555;
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 260px;
+}
+
+.brand-logo-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    width: 40px;
+}
+
+.footer-brand h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer-brand h2 span {
+    font-weight: 400;
+    color: #ccc;
+}
+
+.footer-socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.footer-socials a img:hover {
+    opacity: 1;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+    flex: 2;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+
+.link-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.link-column a {
+  display: block;
+  margin-bottom: 8px;
+  color: #888;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.link-column a:hover {
+  color: #fff;
+}
+
+/* Product Detail (Buy Page) */
+.product-detail {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.product-images {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-image {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-image: url('../img/background1.jpg');
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 48%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.product-info-detail {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-info-detail h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.features {
+  margin-top: 15px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.price-tag {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #d17300;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Similiar Guitar Section */
+.similiar-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.similiar-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.similiar-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.similiar-card {
+  width: 320px;
+  background: url('../img/background1.jpg') center/cover no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image wrapper: mengunci tinggi agar proporsinya pas */
+.similiar-img-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.similiar-img-wrapper img {
+  max-width: 100%;
+  max-height: 180px;
+  display: block;
+}
+
+/* Info area putih di bawah */
+.similiar-info {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 10px 10px;
+}
+
+.similiar-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.similiar-price {
+  font-size: 14px;
+  color: #d17300;
+  font-weight: bold;
+}

@@ -1,0 +1,260 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+
+  top: 0;
+  z-index: 999;
+}
+
+/* Gambar profil kanan */
+.profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-menu a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: #ff6600;
+}
+/* buatlah seperti pada gambar yang dikirimkan*/
+     /* Wrapper untuk judul dan grid */
+.browse-section {
+    padding: 20px;
+  }
+  
+  .browse-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  /* Grid Layout untuk produk */
+  .browse {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  /* Kartu Produk */
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Gambar */
+  .product-image {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/background1.jpg');
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 200px;
+  }
+  
+  /* Info Produk */
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+  gap: 10px;
+}
+
+.product-info h3,
+.product-info p {
+  font-weight: normal;
+}
+
+  
+  .product-info h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .price {
+    color: #a44200;
+    font-weight: 600;
+  }
+
+/* show more */
+.show-more {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px 12px 8px 16px;
+  border-radius: 999px;
+  background-color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+  gap: 10px;
+  margin-bottom: 5%;
+  margin-top: 4%;
+}
+
+.show-more .icon-circle {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-more-wrapper {
+  display: flex;
+  justify-content: center; /* agar tombol ke tengah horizontal */
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 60px;
+}
+
+.footer-line {
+    border: none;
+    border-top: 1px solid #555;
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 260px;
+}
+
+.brand-logo-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    width: 40px;
+}
+
+.footer-brand h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer-brand h2 span {
+    font-weight: 400;
+    color: #ccc;
+}
+
+.footer-socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.footer-socials a img:hover {
+    opacity: 1;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+    flex: 2;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+
+.link-column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.link-column a {
+    display: block;
+    margin-bottom: 8px;
+    color: #888;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.link-column a:hover {
+    color: #fff;
+}
+
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.catalog-header h1 {
+    font-size: 24px;
+}
+
+.view-all .icon {
+    width: 16px;
+    height: 16px;
+}
