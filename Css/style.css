@@ -293,7 +293,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 60px 40px;
-    background: url('../img/Background1.jpg');
+    background: url('../img/background1.jpg');
     background-size: cover;
     background-position: center;
     flex-wrap: wrap;
